@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    
+  </head>
+  <body>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 9242305;
+    window.__lc.visitor = {    
+      name: 'Super Dude',
+      email: 'super.dude@place.com'
+    };
+    (function() {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+    })();
+    
+    var LC_API = LC_API || {};
+    LC_API.on_before_load = function() {
+      console.log('api loaded');
+      LC_API.open_chat_window();
+    };
+    </script>
+    <!-- End of LiveChat code -->
+  </body>
+</html>
